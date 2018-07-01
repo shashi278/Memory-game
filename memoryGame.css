@@ -1,0 +1,118 @@
+body{
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+}
+#divsWrapper{
+    
+    box-shadow: 5px 6px 22px 1px rgba(0,0,0,1);
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+    background: linear-gradient(135deg, rgba(180,223,91,1) 10%,rgba(204,83,195,1) 31%,rgba(191,78,104,1) 44%,rgba(237,146,97,1) 61%,rgba(88,216,212,1) 78%,rgba(103,101,247,1) 93%);
+    animation: bgAnim 10s linear infinite;
+}
+.div{
+    position: relative;
+    height: 109px;
+    width: 79px;
+    overflow: hidden;
+    background: url("https://image.ibb.co/bPNTxy/origins_playing_cards_back1.jpg");
+    background-repeat:no-repeat;
+    border: 1px solid blue;
+    border-radius: 2px;
+    box-shadow: 2px 3px 10px 1px rgba(0,0,0,1);
+    padding: 2px;
+    margin: 10px;
+    transition: flex 0.2s linear,background 0.2s linear;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+}
+.dispTurn{
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    left: 1%;
+    top: 15%;
+    background: linear-gradient(135deg, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+    border-radius: 10%;
+    border: 1px solid grey;
+    color:brown;
+    text-align: center;
+    margin-top: 1%;
+}
+.dispScore{
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    left: 80%;
+    top: 15%;
+    background: linear-gradient(135deg, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+    border-radius: 10%;
+    border: 1px solid grey;
+    color:brown;
+    text-align: center;
+    margin-top: 1%;
+}
+.canvas{
+    top: -10%;
+    animation: canvas 1s linear forwards;
+}
+.scoreCan{
+    top: -10%;
+    animation: scoreCan 1s linear forwards;
+}
+@keyframes scoreCan{
+    0%{
+        top: -10%;
+    }
+    60%{
+        top: 60%;
+    }
+    75%{
+        top: 5%;
+    }
+    100%{
+        top: 25%;
+    }
+}
+@keyframes canvas{
+    0%{
+        top: -15%;
+    }
+    60%{
+        top: 40%;
+    }
+    75%{
+        top: 25%;
+    }
+    100%{
+        top: 40%;
+    }
+}
+/*@keyframes bgAnim{
+    0%{
+        background: linear-gradient(135deg, rgba(180,223,91,1) 10%,rgba(204,83,195,1) 31%,rgba(191,78,104,1) 44%,rgba(237,146,97,1) 61%,rgba(88,216,212,1) 78%,rgba(103,101,247,1) 93%);
+    }
+    20%{
+        background: linear-gradient(135deg, rgba(103,101,247,1) 10%,rgba(180,223,91,1) 31%,rgba(204,83,195,1) 44%,rgba(191,78,104,1) 61%,rgba(237,146,97,1) 78%,rgba(88,216,212,1) 93%);
+    }
+    40%{
+        background: linear-gradient(135deg, rgba(88,216,212,1) 10%,rgba(103,101,247,1) 31%,rgba(180,223,91,1) 44%,rgba(204,83,195,1) 61%,rgba(191,78,104,1) 78%,rgba(237,146,97,1) 93%);
+    }
+    60%{
+        background: linear-gradient(135deg, rgba(237,146,97,1) 10%,rgba(88,216,212,1) 31%,rgba(103,101,247,1) 44%,rgba(180,223,91,1) 61%,rgba(204,83,195,1) 78%,rgba(191,78,104,1) 93%);
+    }
+    80%{
+        background: linear-gradient(135deg, rgba(191,78,104,1) 10%,rgba(237,146,97,1) 31%,rgba(88,216,212,1) 44%,rgba(103,101,247,1) 61%,rgba(180,223,91,1) 78%,rgba(204,83,195,1) 93%);
+    }
+    100%{
+        background: linear-gradient(135deg, rgba(204,83,195,1) 10%,rgba(191,78,104,1) 31%,rgba(237,146,97,1) 44%,rgba(88,216,212,1) 61%,rgba(103,101,247,1) 78%,rgba(180,223,91,1) 93%);
+    }
+}*/
